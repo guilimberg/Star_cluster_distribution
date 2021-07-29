@@ -1,9 +1,9 @@
 # Star_cluster_distribution
-In this repository, I provide Python tools for plotting the <font color='#DC143C'>**distribution of open and globular clusters**</font> on the sky.
+In this repository, I provide Python tools for plotting the **distribution of open and globular clusters** on the sky.
 
-After quite a bit of searching, I was not able to find a figure that would provide a clear demonstration of the differences between the distribution of open and globular clusters in the Galaxy. Therefore, I used data from the Gaia space mission to create my own plot. 
+After quite a bit of searching, I was not able to find a figure that would provide a clear demonstration of the differences between the distribution of open and globular clusters in the Galaxy. Therefore, I used **data from the Gaia space mission** to create my own plot. 
 
-I hope this is useful to some people. Feel free to utilize the codes presented in this repository for educational purposes, presentation/outreach, and even publications. Please acknowledge, if possible. (:
+I hope this is useful to some people. **Feel free to utilize the codes presented in this repository** for educational purposes, presentation/outreach, and even publications. Please acknowledge, if possible. (:
  
 The background image that I utilize for these figure has been produced by ESA's Gaia Collaboration with data from its second data release. You can find it in the following link: [Gaia highlights](https://www.cosmos.esa.int/web/gaia/highlights-of-gaia-dr2). Please acknowledge their magnificent work. For details about the this image came to be and all that it represents, see, for instance, this other link: [Gaia sky map details](https://sci.esa.int/web/gaia/-/60169-gaia-s-sky-in-colour).
 
@@ -15,9 +15,12 @@ Furthermore, the open cluster compilation that I utilize also relies on data fro
 
 * [***Cantat-Gaudin** et al. 2018, **A&A**, 618, A93*](https://www.aanda.org/articles/aa/full_html/2018/10/aa33476-18/aa33476-18.html)
 
-Attention. the nominal .
+Attention. the nominal values for the positions (right ascension and declination) have NOT been updated with new data from Gaia.
 
-Regarding globular clusters, I used .
+Regarding globular clusters, I used the most recent catalog constructed with data from Gaia's early data release 3.
 
-* [***Cantat-Gaudin** et al. 2018, **A&A**, 618, A93*](https://www.aanda.org/articles/aa/full_html/2018/10/aa33476-18/aa33476-18.html)
+* [***Vasiliev & Baumgardt** et al. 2021, **MNRAS**, 505, 5978*](https://doi.org/10.1093/mnras/stab1475)
 
+The final figure is the following (there is also a version with black background available):
+
+![clusters_map](https://raw.githubusercontent.com/guilhermelimberg/Star_cluster_distribution/main/clusters_proj_sky_WHITE.png)
