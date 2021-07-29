@@ -1,5 +1,5 @@
-# <font color='#DC143C'>Star_cluster_distribution</font>
-In this repository, I provide Python tools for plotting the distribution of open and globular clusters in the sky.
+# Star_cluster_distribution
+In this repository, I provide Python tools for plotting the <font color='#DC143C'>**distribution of open and globular clusters**</font> on the sky.
 
 After quite a bit of searching, I was not able to find a figure that would provide a clear demonstration of the differences between the distribution of open and globular clusters in the Galaxy. Therefore, I used data from the Gaia space mission to create my own plot. 
 
