@@ -1,7 +1,5 @@
-import numpy as np
 import matplotlib.pyplot as plt
 from astropy.table import Table
-import imageio
 import matplotlib.patches as mpatches
 import matplotlib.patches as patches
 from astropy.coordinates import SkyCoord
