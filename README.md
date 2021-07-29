@@ -17,7 +17,7 @@ Furthermore, the open cluster compilation that I utilize also relies on data fro
 
 Attention. the nominal values for the positions (right ascension and declination) have NOT been updated with new data from Gaia.
 
-Regarding globular clusters, I used the most recent catalog constructed with data from Gaia's early data release 3.
+Regarding globular clusters, I used the most recent catalog (with ~170 objects of such kind) constructed with data from Gaia's early data release 3.
 
 * [***Vasiliev & Baumgardt** et al. 2021, **MNRAS**, 505, 5978*](https://doi.org/10.1093/mnras/stab1475)
 
