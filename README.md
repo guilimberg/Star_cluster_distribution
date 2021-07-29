@@ -24,3 +24,7 @@ Regarding globular clusters, I used the most recent catalog constructed with dat
 The final figure is the following (there is also a version with black background available):
 
 ![clusters_map](https://raw.githubusercontent.com/guilhermelimberg/Star_cluster_distribution/main/clusters_proj_sky_WHITE.png)
+
+Necessary [Python](https://www.python.org) libraries and packages: [matplotlib](https://matplotlib.org) and [Astropy](https://www.astropy.org).
+
+You should be able to immediately run the code to produce the figures yourself by typing "python3 proj_clusters_in_Galaxy.py" in a terminal within the downloaded (and unzipped) folder.
