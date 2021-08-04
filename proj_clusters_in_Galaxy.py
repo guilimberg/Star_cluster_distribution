@@ -1,5 +1,7 @@
+import numpy as np
 import matplotlib.pyplot as plt
 from astropy.table import Table
+import imageio
 import matplotlib.patches as mpatches
 import matplotlib.patches as patches
 from astropy.coordinates import SkyCoord
@@ -18,11 +20,11 @@ mpl.rcParams.update({'font.size': 15, 'font.family': 'STIXGeneral', 'mathtext.fo
 
 ##########################################################################
 
-open_clusters_summary = Table.read("OpenClusters_GaiaDR2_summary.csv")
+open_clusters_GaiaDR2 = Table.read("OpenClusters_GaiaDR2_summary.csv")
 
 glob_clusters_summary = Table.read("GlobularClusters_GaiaEDR3_summary.csv")
 
-
+open_clusters_GaiaEDR3 = Table.read("OpenClusters_GaiaEDR3_summary.csv")
 #####################################################################
 img = plt.imread("Gaia_sky.png") # import the backgournd image
 
@@ -46,14 +48,14 @@ plt.grid(True, lw=0.5)
 
 
 # PLOT OPEN CLUSTERS
-gal = SkyCoord(open_clusters_summary["GLON"], open_clusters_summary["GLAT"], frame='galactic', unit=u.deg)
+gal = SkyCoord(open_clusters_GaiaEDR3["GLON"], open_clusters_GaiaEDR3["GLAT"], frame='galactic', unit=u.deg)
 
 plt.scatter(-gal.l.wrap_at('180d').radian, gal.b.radian, c='C0', s=2, zorder=-5, marker='o', alpha=1.0, label=r'Open clusters')
 # IMPORTANT: the minus signs simply reflects the longitude axis, as usual (e.g., in TOPCAT this is standard)
 
 # PLOT PLEIADES
-name = open_clusters_summary["Cluster"]
-gal = SkyCoord(open_clusters_summary["GLON"][name=='Melotte_22'], open_clusters_summary["GLAT"][name=='Melotte_22'], frame='galactic', unit=u.deg)
+name = open_clusters_GaiaEDR3["Cluster"]
+gal = SkyCoord(open_clusters_GaiaEDR3["GLON"][name=='Melotte_22'], open_clusters_GaiaEDR3["GLAT"][name=='Melotte_22'], frame='galactic', unit=u.deg)
 
 plt.scatter(-gal.l.wrap_at('180d').radian, gal.b.radian, c='C0', s=150, zorder=+3, marker='*', edgecolor='white', alpha=1.0, label=r'Pleiades')
 
@@ -89,7 +91,7 @@ legend = plt.legend(facecolor='white', frameon=True, fontsize=10, framealpha=0.0
 plt.setp(legend.get_texts(), color='white')
 
 ### SAVE AND LEAVE
-plt.savefig("clusters_proj_sky_BLACK.png", dpi=600, bbox_inches='tight')
+plt.savefig("clusters_proj_sky_BLACK_GaiaEDR3.png", dpi=600, bbox_inches='tight')
 
 
 
@@ -111,14 +113,14 @@ plt.grid(True, lw=0.5)
 
 
 # PLOT OPEN CLUSTERS
-gal = SkyCoord(open_clusters_summary["GLON"], open_clusters_summary["GLAT"], frame='galactic', unit=u.deg)
+gal = SkyCoord(open_clusters_GaiaEDR3["GLON"], open_clusters_GaiaEDR3["GLAT"], frame='galactic', unit=u.deg)
 
 plt.scatter(-gal.l.wrap_at('180d').radian, gal.b.radian, c='C0', s=2, zorder=-5, marker='o', alpha=1.0, label=r'Open clusters')
 # IMPORTANT: the minus signs simply reflects the longitude axis, as usual (e.g., in TOPCAT this is standard)
 
 # PLOT PLEIADES
-name = open_clusters_summary["Cluster"]
-gal = SkyCoord(open_clusters_summary["GLON"][name=='Melotte_22'], open_clusters_summary["GLAT"][name=='Melotte_22'], frame='galactic', unit=u.deg)
+name = open_clusters_GaiaEDR3["Cluster"]
+gal = SkyCoord(open_clusters_GaiaEDR3["GLON"][name=='Melotte_22'], open_clusters_GaiaEDR3["GLAT"][name=='Melotte_22'], frame='galactic', unit=u.deg)
 
 plt.scatter(-gal.l.wrap_at('180d').radian, gal.b.radian, c='C0', s=150, zorder=+3, marker='*', edgecolor='black', alpha=1.0, label=r'Pleiades')
 
@@ -150,5 +152,5 @@ legend = plt.legend(facecolor='black', frameon=True, fontsize=10, framealpha=0.0
 plt.setp(legend.get_texts(), color='black')
 
 ### SAVE AND LEAVE
-plt.savefig("clusters_proj_sky_WHITE.png", dpi=600, bbox_inches='tight')
+plt.savefig("clusters_proj_sky_WHITE_GaiaEDR3.png", dpi=600, bbox_inches='tight')
 
