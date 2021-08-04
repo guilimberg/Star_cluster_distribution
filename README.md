@@ -15,7 +15,9 @@ Furthermore, the open cluster compilation that I utilize also relies on data fro
 
 * [***Cantat-Gaudin** et al. 2018, **A&A**, 618, A93*](https://www.aanda.org/articles/aa/full_html/2018/10/aa33476-18/aa33476-18.html)
 
-Attention. the nominal values for the positions (right ascension and declination) have NOT been updated with new data from Gaia.
+Addendum: I have updated the images (and the code) with the most recent catalog of open clusters based on data from Gaia EDR3. It includes ~1800 (!!!) objects. 
+
+* [***Poggio** et al. 2021, **A&A**, 651, A104*](https://www.aanda.org/articles/aa/full_html/2021/07/aa40687-21/aa40687-21.html)
 
 Regarding globular clusters, I used the most recent catalog (with ~170 objects of such kind) constructed with data from Gaia's early data release 3.
 
@@ -23,7 +25,7 @@ Regarding globular clusters, I used the most recent catalog (with ~170 objects o
 
 The final figure is the following (there is also a version with black background available):
 
-![clusters_map](https://raw.githubusercontent.com/guilhermelimberg/Star_cluster_distribution/main/clusters_proj_sky_WHITE.png)
+![clusters_map](https://github.com/guilhermelimberg/Star_cluster_distribution/blob/main/clusters_proj_sky_WHITE_GaiaEDR3.png?raw=true)
 
 Necessary [Python](https://www.python.org) libraries and packages: [matplotlib](https://matplotlib.org) and [Astropy](https://www.astropy.org).
 
