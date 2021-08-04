@@ -5,7 +5,7 @@ After quite a bit of searching, I was not able to find a figure that would provi
 
 I hope this is useful to some people. **Feel free to utilize the codes presented in this repository** for educational purposes, presentation/outreach, and even publications. Please acknowledge, if possible. (:
  
-The background image that I utilize for these figure has been produced by ESA's Gaia Collaboration with data from its second data release. You can find it in the following link: [Gaia highlights](https://www.cosmos.esa.int/web/gaia/highlights-of-gaia-dr2). Please acknowledge their magnificent work. For details about the this image came to be and all that it represents, see, for instance, this other link: [Gaia sky map details](https://sci.esa.int/web/gaia/-/60169-gaia-s-sky-in-colour).
+The background image that I utilize for these figure has been produced by ESA's Gaia Collaboration with data from its second data release. You can find it in the following link: [Gaia highlights](https://www.cosmos.esa.int/web/gaia/highlights-of-gaia-dr2). Please acknowledge their magnificent work. For details about how this image came to be and all that it represents, see, for instance, this other link: [Gaia sky map details](https://sci.esa.int/web/gaia/-/60169-gaia-s-sky-in-colour).
 
 ![Gaia sky map in colors](https://www.cosmos.esa.int/documents/29201/1666086/GDR2_fluxRGB_hammer_624x312.png/289bee74-9b94-3711-1538-487ff9513e61?t=1524433274000)
 
