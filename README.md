@@ -25,7 +25,7 @@ Regarding globular clusters, I used the most recent catalog (with ~170 objects o
 
 The final figure is the following (there is also a version with black background available):
 
-![clusters_map](https://github.com/guilhermelimberg/Star_cluster_distribution/blob/main/clusters_proj_sky_WHITE_GaiaEDR3.png?raw=true)
+![clusters_map](https://raw.githubusercontent.com/guilhermelimberg/Star_cluster_distribution/main/clusters_proj_sky_WHITE_GaiaEDR3.png)
 
 Necessary [Python](https://www.python.org) libraries and packages: [matplotlib](https://matplotlib.org) and [Astropy](https://www.astropy.org).
 
