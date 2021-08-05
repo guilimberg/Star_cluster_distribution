@@ -82,6 +82,13 @@ ax.yaxis.label.set_color('white')
 ax.tick_params(axis='x', colors='white')
 ax.tick_params(axis='y', colors='white')
 
+angles = np.arange(-150, 180, 30)
+angles_rad = []
+for i in range(len(angles)):
+	angles_rad.append(angles[i] * np.pi / 180)
+
+x_ticks = np.array(['150º', '120º', '90º', '60º', '30º', '0º', '330º', '300º', '270º', '240º', '210º'])
+plt.xticks(angles_rad, x_ticks)
 
 handles = []
 
@@ -91,7 +98,7 @@ legend = plt.legend(facecolor='white', frameon=True, fontsize=10, framealpha=0.0
 plt.setp(legend.get_texts(), color='white')
 
 ### SAVE AND LEAVE
-plt.savefig("clusters_proj_sky_BLACK_GaiaEDR3.png", dpi=600, bbox_inches='tight')
+plt.savefig("clusters_proj_sky_BLACK_GaiaEDR3.png", dpi=None, bbox_inches='tight')
 
 
 
@@ -142,7 +149,16 @@ plt.scatter(-gal.l.wrap_at('180d').radian, gal.b.radian, c='C1', s=150, zorder=+
 
 plt.xlabel("Galactic longitude", fontsize=15, labelpad=20)
 plt.ylabel("Galactic latitude", fontsize=15)
+ax.tick_params(axis='x', colors='white')
 
+
+angles = np.arange(-150, 180, 30)
+angles_rad = []
+for i in range(len(angles)):
+	angles_rad.append(angles[i] * np.pi / 180)
+
+x_ticks = np.array(['150º', '120º', '90º', '60º', '30º', '0º', '330º', '300º', '270º', '240º', '210º'])
+plt.xticks(angles_rad, x_ticks)
 
 handles = []
 
